@@ -24,6 +24,7 @@ class MealTableViewController: UITableViewController {
         if let savedMeals = loadMeals() {
             meals += savedMeals
         } else {
+            
         // Load the sample data.
         loadSampleMeals()
         }
