@@ -55,7 +55,10 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     //MARK: Navigation
     // This method lets you configure a view controller before it's presented.
     @IBAction func cancel(_ sender: UIBarButtonItem) {
+        // dismisses if modal segue
         dismiss(animated: true, completion: nil)
+        // dismisses if show segue
+        self.navigationController?.popViewController(animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
